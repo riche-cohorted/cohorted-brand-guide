@@ -30,7 +30,7 @@ const Home = () => {
             <div className="mb-8">
               <Badge variant="outline" className="mb-6 text-sm px-4 py-2">AI-Enabled Growth Consultancy</Badge>
               <h1 className="text-6xl md:text-8xl font-black leading-none mb-8">
-                Intelligence
+                Growth
                 <br />
                 <span className="text-muted-foreground">Beyond</span>
                 <br />
