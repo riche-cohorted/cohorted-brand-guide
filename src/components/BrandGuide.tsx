@@ -53,15 +53,15 @@ const BrandGuide = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <Tabs defaultValue="website" className="space-y-8">
+        <Tabs defaultValue="overview" className="space-y-8">
           <TabsList className="grid grid-cols-7 w-full max-w-5xl">
-            <TabsTrigger value="website">Website</TabsTrigger>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="logo">Logo</TabsTrigger>
             <TabsTrigger value="colors">Colors</TabsTrigger>
             <TabsTrigger value="typography">Typography</TabsTrigger>
             <TabsTrigger value="components">Components</TabsTrigger>
             <TabsTrigger value="applications">Applications</TabsTrigger>
+            <TabsTrigger value="website">Website</TabsTrigger>
           </TabsList>
 
           {/* Website Tab */}
@@ -72,7 +72,7 @@ const BrandGuide = () => {
               </div>
               <div className="bg-background">
                 <iframe 
-                  src="/brand-guide" 
+                  src="/website" 
                   className="w-full h-[600px] border-0"
                   title="Cohorted Website"
                 />
