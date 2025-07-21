@@ -62,7 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				navy: 'hsl(var(--navy))',
+				'navy-foreground': 'hsl(var(--navy-foreground))',
+				cyan: 'hsl(var(--cyan))',
+				'cyan-foreground': 'hsl(var(--cyan-foreground))',
+				emerald: 'hsl(var(--emerald))',
+				'emerald-foreground': 'hsl(var(--emerald-foreground))',
+				coral: 'hsl(var(--coral))',
+				'coral-foreground': 'hsl(var(--coral-foreground))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -72,12 +80,14 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-electric': 'var(--gradient-electric)',
-				'gradient-subtle': 'var(--gradient-subtle)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-success': 'var(--gradient-success)',
+				'gradient-energy': 'var(--gradient-energy)',
+				'gradient-subtle': 'var(--gradient-subtle)'
 			},
 			boxShadow: {
 				'brand': 'var(--shadow-brand)',
-				'electric': 'var(--shadow-electric)'
+				'electric': 'var(--shadow-electric)',
+				'success': 'var(--shadow-success)'
 			},
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],

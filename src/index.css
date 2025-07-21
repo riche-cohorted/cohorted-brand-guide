@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Modern Cohorted Brand - Inspired by Code&Theory/Valley aesthetic */
+    /* Modern Cohorted Brand - Expanded Palette */
     --background: 0 0% 100%;
     --foreground: 220 15% 10%;
 
@@ -23,36 +23,48 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-glow: 220 15% 25%;
 
-    /* Electric Teal Secondary */
-    --secondary: 180 100% 45%;
+    /* Electric Teal Secondary - Deeper for better contrast */
+    --secondary: 180 100% 35%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Neutral Gray Muted */
-    --muted: 220 10% 96%;
-    --muted-foreground: 220 10% 45%;
+    /* Neutral Warm Gray Muted */
+    --muted: 220 14% 98%;
+    --muted-foreground: 220 13% 46%;
 
-    /* Electric Cyan Accent */
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 15% 10%;
+    /* Emerald Growth Accent */
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Destructive */
-    --destructive: 0 84% 60%;
+    /* Destructive - Coral Orange */
+    --destructive: 25 95% 53%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Clean Borders */
-    --border: 220 10% 90%;
-    --input: 220 10% 95%;
-    --ring: 180 100% 45%;
+    /* Clean Borders with better contrast */
+    --border: 220 13% 91%;
+    --input: 220 14% 96%;
+    --ring: 160 84% 39%;
 
-    /* Modern Gradients - Sophisticated */
-    --gradient-primary: linear-gradient(135deg, hsl(220 15% 10%), hsl(220 15% 20%));
-    --gradient-electric: linear-gradient(135deg, hsl(180 100% 45%), hsl(190 100% 50%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 5% 98%));
-    --gradient-accent: linear-gradient(90deg, hsl(180 100% 45%), hsl(190 100% 50%));
+    /* Extended Color Palette */
+    --navy: 220 25% 8%;
+    --navy-foreground: 0 0% 100%;
+    --cyan: 190 100% 50%;
+    --cyan-foreground: 220 15% 10%;
+    --emerald: 160 84% 39%;
+    --emerald-foreground: 0 0% 100%;
+    --coral: 25 95% 53%;
+    --coral-foreground: 0 0% 100%;
+
+    /* Enhanced Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 15% 10%), hsl(220 25% 8%));
+    --gradient-electric: linear-gradient(135deg, hsl(180 100% 35%), hsl(190 100% 50%));
+    --gradient-success: linear-gradient(135deg, hsl(160 84% 39%), hsl(180 100% 35%));
+    --gradient-energy: linear-gradient(135deg, hsl(25 95% 53%), hsl(190 100% 50%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 98%));
 
     /* Sophisticated Shadows */
     --shadow-brand: 0 25px 50px -12px hsl(220 15% 10% / 0.25);
-    --shadow-electric: 0 10px 40px -10px hsl(180 100% 45% / 0.3);
+    --shadow-electric: 0 10px 40px -10px hsl(180 100% 35% / 0.3);
+    --shadow-success: 0 10px 30px -10px hsl(160 84% 39% / 0.3);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,19 +72,12 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 

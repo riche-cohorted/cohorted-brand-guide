@@ -20,11 +20,14 @@ const BrandGuide = () => {
 
   const brandColors = [
     { name: "Charcoal Black", hex: "#1A1D23", hsl: "220 15% 10%", usage: "Primary - Bold headers, text, authority" },
-    { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 45%", usage: "Secondary - Tech innovation, accents" },
+    { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 35%", usage: "Secondary - Tech innovation, accents" },
     { name: "Electric Cyan", hex: "#00CCFF", hsl: "190 100% 50%", usage: "Accent - Energy, growth, highlights" },
+    { name: "Deep Navy", hex: "#0F1419", hsl: "220 25% 8%", usage: "Dark backgrounds, sophisticated contrast" },
+    { name: "Emerald Growth", hex: "#10B981", hsl: "160 84% 39%", usage: "Success, growth indicators, positive actions" },
+    { name: "Coral Orange", hex: "#F97316", hsl: "25 95% 53%", usage: "CTAs, urgent actions, energy" },
     { name: "Pure White", hex: "#FFFFFF", hsl: "0 0% 100%", usage: "Background, contrast, clean space" },
-    { name: "Neutral Gray", hex: "#737373", hsl: "220 10% 45%", usage: "Supporting text, subtle elements" },
-    { name: "Light Neutral", hex: "#F8F9FA", hsl: "220 10% 96%", usage: "Backgrounds, cards, sections" },
+    { name: "Warm Gray", hex: "#6B7280", hsl: "220 13% 46%", usage: "Supporting text, subtle elements" },
+    { name: "Light Pearl", hex: "#F8FAFC", hsl: "220 14% 98%", usage: "Backgrounds, cards, sections" },
   ];
 
   const typography = [
