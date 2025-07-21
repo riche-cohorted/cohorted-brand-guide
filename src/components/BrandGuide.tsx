@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Copy, Download, Palette, Type, Layout, Sparkles } from "lucide-react";
-import cohortedLogo from "@/assets/cohorted-logo-clean.png";
+import cohortedLogo from "@/assets/cohorted-logo-final.png";
 import cohortedMoodboard from "@/assets/cohorted-moodboard-modern.png";
-import logoTreatments from "@/assets/logo-treatments-modern.png";
+import logoVariations from "@/assets/cohorted-logo-variations.png";
 
 const BrandGuide = () => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
@@ -296,19 +296,29 @@ const BrandGuide = () => {
                   </p>
                 </div>
                 <img 
-                  src={logoTreatments} 
-                  alt="Logo Treatments" 
+                  src={logoVariations} 
+                  alt="Logo Variations" 
                   className="w-full rounded-lg shadow-brand mb-6"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3">Logo Usage Guidelines</h4>
                     <ul className="text-muted-foreground space-y-2">
-                      <li>• Maintain minimum clear space of 1x logo height</li>
-                      <li>• Use primary version on light backgrounds</li>
-                      <li>• Use reversed version on dark backgrounds</li>
-                      <li>• Icon-only version for social media profiles</li>
-                      <li>• Minimum size: 120px width for horizontal logo</li>
+                      <li>• Clean, minimal design optimized for scalability</li>
+                      <li>• Works effectively at all sizes from favicon to billboard</li>
+                      <li>• Horizontal and stacked versions available</li>
+                      <li>• Icon-only version for compact applications</li>
+                      <li>• Minimum size: 80px width for horizontal logo</li>
+                      <li>• High contrast ensures readability on any background</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3">Logo Features</h4>
+                    <ul className="text-muted-foreground space-y-2">
+                      <li>• <strong>Simplified:</strong> Removed visual clutter for better recognition</li>
+                      <li>• <strong>Versatile:</strong> Works across digital and print media</li>
+                      <li>• <strong>Professional:</strong> Clean typography with subtle geometric elements</li>
+                      <li>• <strong>Scalable:</strong> Maintains clarity from 16px to large formats</li>
                     </ul>
                   </div>
                   <div>
