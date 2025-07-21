@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Copy, Download, Palette, Type, Layout, Sparkles } from "lucide-react";
-import cohortedLogo from "@/assets/cohorted-logo-modern.png";
+import cohortedLogo from "@/assets/cohorted-logo-clean.png";
 import cohortedMoodboard from "@/assets/cohorted-moodboard-modern.png";
 import logoTreatments from "@/assets/logo-treatments-modern.png";
 
