@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Copy, Download, Palette, Type, Layout, Sparkles } from "lucide-react";
-import cohortedLogo from "@/assets/cohorted-logo.png";
-import cohortedMoodboard from "@/assets/cohorted-moodboard.png";
-import logoTreatments from "@/assets/logo-treatments.png";
+import cohortedLogo from "@/assets/cohorted-logo-modern.png";
+import cohortedMoodboard from "@/assets/cohorted-moodboard-modern.png";
+import logoTreatments from "@/assets/logo-treatments-modern.png";
 
 const BrandGuide = () => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
@@ -19,12 +19,12 @@ const BrandGuide = () => {
   };
 
   const brandColors = [
-    { name: "Deep Navy", hex: "#2B3E5C", hsl: "220 50% 20%", usage: "Primary brand color, headers, CTAs" },
-    { name: "Electric Blue", hex: "#0080FF", hsl: "210 100% 50%", usage: "Secondary brand color, accents, links" },
-    { name: "Navy Glow", hex: "#4A6084", hsl: "220 50% 35%", usage: "Hover states, gradients" },
-    { name: "Bright Green", hex: "#22C55E", hsl: "120 60% 50%", usage: "Success states, growth indicators" },
-    { name: "Warm Gray", hex: "#6B7280", hsl: "220 25% 45%", usage: "Text, subtle elements" },
-    { name: "Light Gray", hex: "#F8FAFC", hsl: "220 15% 96%", usage: "Backgrounds, cards" },
+    { name: "Charcoal Black", hex: "#1A1D23", hsl: "220 15% 10%", usage: "Primary - Bold headers, text, authority" },
+    { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 45%", usage: "Secondary - Tech innovation, accents" },
+    { name: "Electric Cyan", hex: "#00CCFF", hsl: "190 100% 50%", usage: "Accent - Energy, growth, highlights" },
+    { name: "Pure White", hex: "#FFFFFF", hsl: "0 0% 100%", usage: "Background, contrast, clean space" },
+    { name: "Neutral Gray", hex: "#737373", hsl: "220 10% 45%", usage: "Supporting text, subtle elements" },
+    { name: "Light Neutral", hex: "#F8F9FA", hsl: "220 10% 96%", usage: "Backgrounds, cards, sections" },
   ];
 
   const typography = [
@@ -38,18 +38,17 @@ const BrandGuide = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-subtle">
-      {/* Header */}
-      <div className="bg-primary text-primary-foreground py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center gap-6 mb-6">
-            <img src={cohortedLogo} alt="Cohorted Logo" className="h-16" />
+    <div className="min-h-screen bg-background">
+      {/* Hero Section - Bold & Modern */}
+      <div className="bg-primary text-primary-foreground">
+        <div className="max-w-7xl mx-auto px-6 py-32">
+          <div className="text-center">
+            <h1 className="text-8xl font-black mb-8 tracking-tight">Cohorted</h1>
+            <p className="text-2xl font-medium mb-6 opacity-90">Digital Brand Guide</p>
+            <p className="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+              AI-enabled growth consultancy transforming post-purchase experiences
+            </p>
           </div>
-          <h1 className="text-4xl font-bold mb-4">Cohorted Brand Guide</h1>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl">
-            Complete digital brand guidelines for the AI-enabled growth consultancy that transforms 
-            post-purchase experiences into revenue engines.
-          </p>
         </div>
       </div>
 
@@ -81,7 +80,7 @@ const BrandGuide = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Primary Tagline</h4>
-                    <p className="text-lg">"Growth Beyond the Sale"</p>
+                    <p className="text-2xl font-bold text-secondary">"Growth Beyond the Sale"</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Brand Promise</h4>
@@ -90,11 +89,11 @@ const BrandGuide = () => {
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Supporting Slogans</h4>
-                    <ul className="text-muted-foreground space-y-1">
-                      <li>• AI-Powered. Human-Driven. Growth-Focused.</li>
-                      <li>• Where Customer Experience Meets Revenue Science</li>
-                      <li>• Turn Every Customer Journey Into a Growth Story</li>
+                    <h4 className="font-semibold mb-2">Power Slogans</h4>
+                    <ul className="text-foreground space-y-2 text-lg">
+                      <li className="font-bold">• AI-Powered. Human-Driven. Growth-Focused.</li>
+                      <li className="font-bold">• Where Customer Experience Meets Revenue Intelligence</li>
+                      <li className="font-bold text-accent">• Turn Every Customer Journey Into a Growth Story</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -114,20 +113,17 @@ const BrandGuide = () => {
               </Card>
             </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>Elevator Pitch</CardTitle>
+            <Card className="shadow-electric border-0 bg-gradient-electric text-white">
+              <CardHeader className="pb-8">
+                <CardTitle className="text-4xl font-black text-center">Elevator Pitch</CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="bg-muted p-6 rounded-lg">
-                  <p className="text-lg leading-relaxed">
-                    "Cohorted transforms the post-purchase experience into a growth engine. We're an AI-enabled 
-                    consultancy that helps mid-market companies increase customer retention and expansion revenue. 
-                    Think of us as the growth operators who've scaled customer experiences for companies like 
-                    Bank of America and Reddit—now bringing that expertise to companies like yours through 
-                    AI-powered strategies and hands-on execution."
-                  </p>
-                </div>
+              <CardContent className="text-center">
+                <p className="text-2xl leading-relaxed max-w-5xl mx-auto font-medium">
+                  <strong className="font-black">Cohorted transforms the post-purchase experience into a growth engine.</strong> 
+                  We're an AI-enabled consultancy specializing in post-purchase optimization—turning existing customers 
+                  into your most profitable growth engine. With enterprise experience from Bank of America, Cigna Healthcare, 
+                  and IBM, we deliver tech-enabled strategies that unlock hidden revenue streams.
+                </p>
               </CardContent>
             </Card>
           </TabsContent>
