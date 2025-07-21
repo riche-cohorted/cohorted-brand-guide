@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-import { Copy, Download, Palette, Type, Layout, Sparkles, Shield, Star } from "lucide-react";
-import cohortedLogo from "@/assets/cohorted-logo-final.png";
+import { Copy, Download, Palette, Type, Layout, Sparkles } from "lucide-react";
+import cohortedLogo from "@/assets/cohorted-logo-modern.png";
 import cohortedMoodboard from "@/assets/cohorted-moodboard-modern.png";
-import logoVariations from "@/assets/cohorted-logo-variations.png";
+import logoTreatments from "@/assets/logo-treatments-modern.png";
 
 const BrandGuide = () => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
@@ -20,24 +20,21 @@ const BrandGuide = () => {
 
   const brandColors = [
     { name: "Charcoal Black", hex: "#1A1D23", hsl: "220 15% 10%", usage: "Primary - Bold headers, text, authority" },
-    { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 35%", usage: "Secondary - Tech innovation, accents" },
+    { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 45%", usage: "Secondary - Tech innovation, accents" },
     { name: "Electric Cyan", hex: "#00CCFF", hsl: "190 100% 50%", usage: "Accent - Energy, growth, highlights" },
-    { name: "Deep Navy", hex: "#0F1419", hsl: "220 25% 8%", usage: "Dark backgrounds, sophisticated contrast" },
-    { name: "Emerald Growth", hex: "#10B981", hsl: "160 84% 39%", usage: "Success, growth indicators, positive actions" },
-    { name: "Coral Orange", hex: "#F97316", hsl: "25 95% 53%", usage: "CTAs, urgent actions, energy" },
     { name: "Pure White", hex: "#FFFFFF", hsl: "0 0% 100%", usage: "Background, contrast, clean space" },
-    { name: "Warm Gray", hex: "#6B7280", hsl: "220 13% 46%", usage: "Supporting text, subtle elements" },
-    { name: "Light Pearl", hex: "#F8FAFC", hsl: "220 14% 98%", usage: "Backgrounds, cards, sections" },
+    { name: "Neutral Gray", hex: "#737373", hsl: "220 10% 45%", usage: "Supporting text, subtle elements" },
+    { name: "Light Neutral", hex: "#F8F9FA", hsl: "220 10% 96%", usage: "Backgrounds, cards, sections" },
   ];
 
   const typography = [
-    { name: "Display", font: "Playfair Display", weight: "700", size: "48px", usage: "Hero headlines, major page titles", className: "font-display font-bold text-5xl" },
-    { name: "Heading 1", font: "Playfair Display", weight: "600", size: "36px", usage: "Section headers", className: "font-display font-semibold text-4xl" },
-    { name: "Heading 2", font: "Playfair Display", weight: "500", size: "24px", usage: "Sub-sections", className: "font-display font-medium text-2xl" },
-    { name: "Heading 3", font: "Inter", weight: "600", size: "20px", usage: "Card titles, smaller headings", className: "font-sans font-semibold text-xl" },
-    { name: "Body Large", font: "Inter", weight: "400", size: "18px", usage: "Intro text, important body copy", className: "font-sans text-lg" },
-    { name: "Body", font: "Inter", weight: "400", size: "16px", usage: "Standard body text", className: "font-sans text-base" },
-    { name: "Small", font: "Inter", weight: "400", size: "14px", usage: "Captions, metadata", className: "font-sans text-sm" },
+    { name: "Display", font: "Inter", weight: "700", size: "48px", usage: "Page titles, hero headlines" },
+    { name: "Heading 1", font: "Inter", weight: "600", size: "36px", usage: "Section headers" },
+    { name: "Heading 2", font: "Inter", weight: "600", size: "24px", usage: "Sub-sections" },
+    { name: "Heading 3", font: "Inter", weight: "500", size: "20px", usage: "Card titles" },
+    { name: "Body Large", font: "Inter", weight: "400", size: "18px", usage: "Intro text, important body" },
+    { name: "Body", font: "Inter", weight: "400", size: "16px", usage: "Default body text" },
+    { name: "Small", font: "Inter", weight: "400", size: "14px", usage: "Captions, metadata" },
   ];
 
   return (
@@ -106,7 +103,7 @@ const BrandGuide = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Brand Promise</h4>
                     <p className="text-muted-foreground">
-                      We don't just analyze what happened—we equip you for what's next.
+                      We don't just analyze what happened—we architect what's next.
                     </p>
                   </div>
                   <div>
@@ -171,7 +168,7 @@ const BrandGuide = () => {
                       NEW YORK, NY - Cohorted, a pioneering AI-enabled growth consultancy, today announced its official launch with a mission to transform how companies optimize post-purchase customer experiences. Founded by growth specialists with proven track records at Fortune 500 companies including Bank of America, Cigna Healthcare, and IBM, Cohorted addresses the $3 trillion revenue gap created by ineffective post-purchase optimization.
                     </p>
                     <p className="text-sm leading-relaxed">
-                      "Companies invest billions in customer acquisition, then watch 70% of potential lifetime value disappear due to poor post-purchase experiences," said [CEO Name], CEO of Cohorted. "We don't just analyze what happened—we equip you for what's next. Our AI-powered approach transforms customer data into measurable growth strategies."
+                      "Companies invest billions in customer acquisition, then watch 70% of potential lifetime value disappear due to poor post-purchase experiences," said [CEO Name], CEO of Cohorted. "We don't just analyze what happened—we architect what's next. Our AI-powered approach transforms customer data into measurable growth strategies."
                     </p>
                   </div>
                 </CardContent>
@@ -293,41 +290,20 @@ const BrandGuide = () => {
                 <CardTitle>Logo Treatments</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-6 p-4 bg-muted rounded-lg">
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Latest Update:</strong> Created a clean, simple logo design and updated the brand guide to use it.
-                  </p>
-                </div>
                 <img 
-                  src={logoVariations} 
-                  alt="Logo Variations" 
+                  src={logoTreatments} 
+                  alt="Logo Treatments" 
                   className="w-full rounded-lg shadow-brand mb-6"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 flex items-center gap-2">
-                      <Shield className="h-4 w-4 text-primary" />
-                      Logo Usage Guidelines
-                    </h4>
+                    <h4 className="font-semibold mb-3">Logo Usage Guidelines</h4>
                     <ul className="text-muted-foreground space-y-2">
-                      <li>• Clean, minimal design optimized for scalability</li>
-                      <li>• Works effectively at all sizes from favicon to billboard</li>
-                      <li>• Horizontal and stacked versions available</li>
-                      <li>• Icon-only version for compact applications</li>
-                      <li>• Minimum size: 80px width for horizontal logo</li>
-                      <li>• High contrast ensures readability on any background</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-3 flex items-center gap-2">
-                      <Star className="h-4 w-4 text-primary" />
-                      Logo Features
-                    </h4>
-                    <ul className="text-muted-foreground space-y-2">
-                      <li>• <strong>Simplified:</strong> Removed visual clutter for better recognition</li>
-                      <li>• <strong>Versatile:</strong> Works across digital and print media</li>
-                      <li>• <strong>Professional:</strong> Clean typography with subtle geometric elements</li>
-                      <li>• <strong>Scalable:</strong> Maintains clarity from 16px to large formats</li>
+                      <li>• Maintain minimum clear space of 1x logo height</li>
+                      <li>• Use primary version on light backgrounds</li>
+                      <li>• Use reversed version on dark backgrounds</li>
+                      <li>• Icon-only version for social media profiles</li>
+                      <li>• Minimum size: 120px width for horizontal logo</li>
                     </ul>
                   </div>
                   <div>
@@ -467,32 +443,12 @@ const BrandGuide = () => {
 
                 <div className="mt-8 p-6 bg-muted rounded-lg">
                   <h4 className="font-semibold mb-4">Typography Guidelines</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h5 className="font-medium mb-3">Playfair Display (Headings)</h5>
-                      <ul className="text-muted-foreground space-y-2 text-sm">
-                        <li>• Elegant serif for display text and major headings</li>
-                        <li>• Use for hero titles, section headers, and brand messaging</li>
-                        <li>• Weights: 500 (medium), 600 (semibold), 700 (bold)</li>
-                        <li>• Line height: 1.2 for optimal readability</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h5 className="font-medium mb-3">Inter (Body Text)</h5>
-                      <ul className="text-muted-foreground space-y-2 text-sm">
-                        <li>• Clean, professional sans-serif for all body content</li>
-                        <li>• Use for paragraphs, captions, and supporting text</li>
-                        <li>• Weights: 400 (regular), 500 (medium), 600 (semibold)</li>
-                        <li>• Line height: 1.5 for comfortable reading</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="mt-4 p-4 bg-background rounded border">
-                    <h6 className="font-medium mb-2">Sophisticated Typography Pairing</h6>
-                    <p className="text-muted-foreground text-sm">
-                      The combination of Playfair Display's elegant serif character with Inter's clean readability creates a sophisticated brand presence that conveys both authority and approachability.
-                    </p>
-                  </div>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Use Inter font family for all text elements</li>
+                    <li>• Maintain consistent line height: 1.5 for body text, 1.2 for headings</li>
+                    <li>• Ensure sufficient contrast ratios (minimum 4.5:1)</li>
+                    <li>• Use font weights purposefully: 400 for body, 500-600 for emphasis, 700 for headlines</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
