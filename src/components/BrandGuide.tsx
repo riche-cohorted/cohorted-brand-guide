@@ -53,8 +53,9 @@ const BrandGuide = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 py-12">
-        <Tabs defaultValue="overview" className="space-y-8">
-          <TabsList className="grid grid-cols-6 w-full max-w-4xl">
+        <Tabs defaultValue="website" className="space-y-8">
+          <TabsList className="grid grid-cols-7 w-full max-w-5xl">
+            <TabsTrigger value="website">Website</TabsTrigger>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="logo">Logo</TabsTrigger>
             <TabsTrigger value="colors">Colors</TabsTrigger>
@@ -62,6 +63,22 @@ const BrandGuide = () => {
             <TabsTrigger value="components">Components</TabsTrigger>
             <TabsTrigger value="applications">Applications</TabsTrigger>
           </TabsList>
+
+          {/* Website Tab */}
+          <TabsContent value="website" className="space-y-0">
+            <div className="rounded-lg overflow-hidden border border-border">
+              <div className="bg-muted/20 px-4 py-2 text-sm text-muted-foreground border-b border-border">
+                Cohorted Website Preview
+              </div>
+              <div className="bg-background">
+                <iframe 
+                  src="/brand-guide" 
+                  className="w-full h-[600px] border-0"
+                  title="Cohorted Website"
+                />
+              </div>
+            </div>
+          </TabsContent>
 
           {/* Overview Tab */}
           <TabsContent value="overview" className="space-y-8">
