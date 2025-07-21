@@ -71,16 +71,17 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-electric': 'var(--gradient-electric)',
 				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-accent': 'var(--gradient-accent)'
 			},
 			boxShadow: {
 				'brand': 'var(--shadow-brand)',
-				'glow': 'var(--shadow-glow)'
+				'electric': 'var(--shadow-electric)'
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'display': ['Inter', 'system-ui', 'sans-serif']
+				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+				'display': ['Inter', 'system-ui', '-apple-system', 'sans-serif']
 			},
 			keyframes: {
 				'accordion-down': {
