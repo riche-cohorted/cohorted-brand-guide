@@ -342,7 +342,7 @@ const Home = () => {
                   Schedule Strategy Call
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-primary font-semibold text-lg px-8 py-6">
                   Download Case Study
                 </Button>
               </div>
