@@ -54,8 +54,9 @@ const BrandGuide = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-12">
         <Tabs defaultValue="overview" className="space-y-8">
-          <TabsList className="grid grid-cols-7 w-full max-w-5xl">
+          <TabsList className="grid grid-cols-8 w-full max-w-6xl">
             <TabsTrigger value="overview">Overview</TabsTrigger>
+            <TabsTrigger value="messages">Messages</TabsTrigger>
             <TabsTrigger value="logo">Logo</TabsTrigger>
             <TabsTrigger value="colors">Colors</TabsTrigger>
             <TabsTrigger value="typography">Typography</TabsTrigger>
@@ -143,6 +144,143 @@ const BrandGuide = () => {
                 </p>
               </CardContent>
             </Card>
+          </TabsContent>
+
+          {/* Messages Tab */}
+          <TabsContent value="messages" className="space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Press Release */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-secondary" />
+                    Press Release
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="bg-muted p-6 rounded-lg">
+                    <h4 className="font-bold text-lg mb-4">FOR IMMEDIATE RELEASE</h4>
+                    <h3 className="font-bold text-xl mb-4">Cohorted Launches AI-Enabled Growth Consultancy to Transform Post-Purchase Customer Experiences</h3>
+                    <p className="text-muted-foreground mb-4 text-sm">
+                      <strong>New consultancy brings enterprise-grade customer intelligence to mid-market companies, promising 3x revenue growth in 90 days</strong>
+                    </p>
+                    <p className="text-sm leading-relaxed mb-4">
+                      NEW YORK, NY - Cohorted, a pioneering AI-enabled growth consultancy, today announced its official launch with a mission to transform how companies optimize post-purchase customer experiences. Founded by growth specialists with proven track records at Fortune 500 companies including Bank of America, Cigna Healthcare, and IBM, Cohorted addresses the $3 trillion revenue gap created by ineffective post-purchase optimization.
+                    </p>
+                    <p className="text-sm leading-relaxed">
+                      "Companies invest billions in customer acquisition, then watch 70% of potential lifetime value disappear due to poor post-purchase experiences," said [CEO Name], CEO of Cohorted. "We don't just analyze what happened—we architect what's next. Our AI-powered approach transforms customer data into measurable growth strategies."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* LinkedIn Announcement */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-primary">LinkedIn Company Announcement</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="bg-white border-2 border-secondary/20 p-6 rounded-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white font-bold text-lg">C</span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-primary">Cohorted</h4>
+                        <p className="text-sm text-muted-foreground">AI Growth Consultancy • 1d</p>
+                      </div>
+                    </div>
+                    <p className="text-foreground mb-4">
+                      🚀 <strong>Intelligence Beyond The Sale</strong>
+                      <br /><br />
+                      Today marks an exciting milestone as we officially launch Cohorted — an AI-enabled growth consultancy transforming how companies optimize post-purchase customer experiences.
+                      <br /><br />
+                      The problem? Companies spend billions acquiring customers, then watch 70% of revenue potential disappear after the first purchase.
+                      <br /><br />
+                      Our solution? AI-powered customer intelligence that transforms data into measurable growth strategies. With enterprise expertise from Bank of America, Cigna Healthcare, and IBM, we deliver 3x average revenue growth in 90 days.
+                      <br /><br />
+                      <span className="text-secondary font-bold">#GrowthBeyondTheSale #CustomerIntelligence #AIConsulting</span>
+                    </p>
+                    <div className="flex gap-2">
+                      <Badge variant="outline" className="text-xs">CustomerSuccess</Badge>
+                      <Badge variant="outline" className="text-xs">RevenueGrowth</Badge>
+                      <Badge variant="outline" className="text-xs">AIEnabled</Badge>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Sales Outreach Email */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-primary">Sales Outreach Email</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="bg-muted p-6 rounded-lg space-y-4">
+                    <div>
+                      <p className="text-sm font-medium mb-2">Subject: Turning your customer data into 3x revenue growth</p>
+                      <p className="text-sm text-muted-foreground mb-4">To: [CEO/CMO Name]</p>
+                    </div>
+                    
+                    <div className="text-sm space-y-3">
+                      <p>Hi [Name],</p>
+                      <p>I noticed [Company] has been growing rapidly — congratulations on [recent achievement/milestone].</p>
+                      <p>I'm reaching out because most companies in your position face a hidden challenge: while you're excellent at acquiring customers, 70% of potential revenue disappears after the first purchase due to suboptimal post-purchase experiences.</p>
+                      <p><strong>What if you could turn that around in 90 days?</strong></p>
+                      <p>At Cohorted, we use AI-powered customer intelligence to transform post-purchase data into measurable growth strategies. Our clients typically see 3x revenue growth within 90 days.</p>
+                      <p>Our approach worked for companies like [relevant client] who increased customer lifetime value by 240% in their first quarter with us.</p>
+                      <p>Worth a 15-minute conversation to explore what this could mean for [Company]?</p>
+                      <p>Best,<br />[Your Name]</p>
+                      <p className="text-xs text-muted-foreground">P.S. We guarantee measurable results within 90 days — or we work for free until you see them.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* LinkedIn Cold Outreach Sequence */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-primary">LinkedIn Cold Outreach Sequence</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-6">
+                    {/* Message 1 */}
+                    <div className="bg-muted p-4 rounded-lg">
+                      <h5 className="font-semibold mb-2 text-secondary">Message 1 - Connection Request</h5>
+                      <p className="text-sm">
+                        Hi [Name], I see you're driving growth at [Company]. I help companies like yours turn customer data into revenue engines. Would love to connect and share insights on post-purchase optimization.
+                      </p>
+                    </div>
+
+                    {/* Message 2 */}
+                    <div className="bg-muted p-4 rounded-lg">
+                      <h5 className="font-semibold mb-2 text-secondary">Message 2 - Value Add (3 days later)</h5>
+                      <p className="text-sm">
+                        Thanks for connecting, [Name]! I saw [Company's recent news/content]. Quick question: are you capturing the full revenue potential from your existing customers? Most companies lose 70% of possible LTV after the first purchase. Happy to share some insights specific to your industry if helpful.
+                      </p>
+                    </div>
+
+                    {/* Message 3 */}
+                    <div className="bg-muted p-4 rounded-lg">
+                      <h5 className="font-semibold mb-2 text-secondary">Message 3 - Case Study (1 week later)</h5>
+                      <p className="text-sm">
+                        [Name], thought you might find this interesting: we recently helped a [similar company] increase their customer LTV by 3x in 90 days using AI-powered post-purchase optimization. The approach focused on [specific relevant strategy]. Would a brief call to discuss what this could look like for [Company] be valuable?
+                      </p>
+                    </div>
+
+                    {/* Message 4 */}
+                    <div className="bg-muted p-4 rounded-lg">
+                      <h5 className="font-semibold mb-2 text-secondary">Message 4 - Direct Ask (1 week later)</h5>
+                      <p className="text-sm">
+                        [Name], I'll be direct: if you're not systematically optimizing your post-purchase experience, you're likely leaving significant revenue on the table. We guarantee 3x growth in 90 days or we work for free. Worth 15 minutes to explore what that could mean for [Company]?
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </TabsContent>
 
           {/* Logo Tab */}
