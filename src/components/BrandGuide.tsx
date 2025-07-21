@@ -103,7 +103,7 @@ const BrandGuide = () => {
                   <div>
                     <h4 className="font-semibold mb-2">Brand Promise</h4>
                     <p className="text-muted-foreground">
-                      We don't just analyze what happened—we architect what's next.
+                      We don't just analyze what happened—we plan for what's next.
                     </p>
                   </div>
                   <div>
@@ -168,7 +168,7 @@ const BrandGuide = () => {
                       NEW YORK, NY - Cohorted, a pioneering AI-enabled growth consultancy, today announced its official launch with a mission to transform how companies optimize post-purchase customer experiences. Founded by growth specialists with proven track records at Fortune 500 companies including Bank of America, Cigna Healthcare, and IBM, Cohorted addresses the $3 trillion revenue gap created by ineffective post-purchase optimization.
                     </p>
                     <p className="text-sm leading-relaxed">
-                      "Companies invest billions in customer acquisition, then watch 70% of potential lifetime value disappear due to poor post-purchase experiences," said [CEO Name], CEO of Cohorted. "We don't just analyze what happened—we architect what's next. Our AI-powered approach transforms customer data into measurable growth strategies."
+                      "Companies invest billions in customer acquisition, then watch 70% of potential lifetime value disappear due to poor post-purchase experiences," said [CEO Name], CEO of Cohorted. "We don't just analyze what happened—we plan for what's next. Our AI-powered approach transforms customer data into measurable growth strategies."
                     </p>
                   </div>
                 </CardContent>
