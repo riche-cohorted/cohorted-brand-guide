@@ -102,9 +102,9 @@ const BrandGuide = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Brand Promise</h4>
-                    <p className="text-muted-foreground">
-                      We don't just analyze what happened—we architect what's next.
-                    </p>
+                     <p className="text-muted-foreground">
+                       We don't just analyze what happened—we equip you for what's next.
+                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Power Slogans</h4>
