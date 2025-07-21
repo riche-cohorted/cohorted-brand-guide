@@ -81,7 +81,8 @@ export default {
 			},
 			fontFamily: {
 				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-				'display': ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+				'serif': ['Playfair Display', 'Georgia', 'serif'],
+				'display': ['Playfair Display', 'Georgia', 'serif']
 			},
 			keyframes: {
 				'accordion-down': {

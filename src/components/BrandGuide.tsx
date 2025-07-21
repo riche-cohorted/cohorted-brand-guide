@@ -28,13 +28,13 @@ const BrandGuide = () => {
   ];
 
   const typography = [
-    { name: "Display", font: "Inter", weight: "700", size: "48px", usage: "Page titles, hero headlines" },
-    { name: "Heading 1", font: "Inter", weight: "600", size: "36px", usage: "Section headers" },
-    { name: "Heading 2", font: "Inter", weight: "600", size: "24px", usage: "Sub-sections" },
-    { name: "Heading 3", font: "Inter", weight: "500", size: "20px", usage: "Card titles" },
-    { name: "Body Large", font: "Inter", weight: "400", size: "18px", usage: "Intro text, important body" },
-    { name: "Body", font: "Inter", weight: "400", size: "16px", usage: "Default body text" },
-    { name: "Small", font: "Inter", weight: "400", size: "14px", usage: "Captions, metadata" },
+    { name: "Display", font: "Playfair Display", weight: "700", size: "48px", usage: "Hero headlines, major page titles", className: "font-display font-bold text-5xl" },
+    { name: "Heading 1", font: "Playfair Display", weight: "600", size: "36px", usage: "Section headers", className: "font-display font-semibold text-4xl" },
+    { name: "Heading 2", font: "Playfair Display", weight: "500", size: "24px", usage: "Sub-sections", className: "font-display font-medium text-2xl" },
+    { name: "Heading 3", font: "Inter", weight: "600", size: "20px", usage: "Card titles, smaller headings", className: "font-sans font-semibold text-xl" },
+    { name: "Body Large", font: "Inter", weight: "400", size: "18px", usage: "Intro text, important body copy", className: "font-sans text-lg" },
+    { name: "Body", font: "Inter", weight: "400", size: "16px", usage: "Standard body text", className: "font-sans text-base" },
+    { name: "Small", font: "Inter", weight: "400", size: "14px", usage: "Captions, metadata", className: "font-sans text-sm" },
   ];
 
   return (
@@ -464,12 +464,32 @@ const BrandGuide = () => {
 
                 <div className="mt-8 p-6 bg-muted rounded-lg">
                   <h4 className="font-semibold mb-4">Typography Guidelines</h4>
-                  <ul className="text-muted-foreground space-y-2">
-                    <li>• Use Inter font family for all text elements</li>
-                    <li>• Maintain consistent line height: 1.5 for body text, 1.2 for headings</li>
-                    <li>• Ensure sufficient contrast ratios (minimum 4.5:1)</li>
-                    <li>• Use font weights purposefully: 400 for body, 500-600 for emphasis, 700 for headlines</li>
-                  </ul>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-medium mb-3">Playfair Display (Headings)</h5>
+                      <ul className="text-muted-foreground space-y-2 text-sm">
+                        <li>• Elegant serif for display text and major headings</li>
+                        <li>• Use for hero titles, section headers, and brand messaging</li>
+                        <li>• Weights: 500 (medium), 600 (semibold), 700 (bold)</li>
+                        <li>• Line height: 1.2 for optimal readability</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 className="font-medium mb-3">Inter (Body Text)</h5>
+                      <ul className="text-muted-foreground space-y-2 text-sm">
+                        <li>• Clean, professional sans-serif for all body content</li>
+                        <li>• Use for paragraphs, captions, and supporting text</li>
+                        <li>• Weights: 400 (regular), 500 (medium), 600 (semibold)</li>
+                        <li>• Line height: 1.5 for comfortable reading</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="mt-4 p-4 bg-background rounded border">
+                    <h6 className="font-medium mb-2">Sophisticated Typography Pairing</h6>
+                    <p className="text-muted-foreground text-sm">
+                      The combination of Playfair Display's elegant serif character with Inter's clean readability creates a sophisticated brand presence that conveys both authority and approachability.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
