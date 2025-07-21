@@ -290,6 +290,11 @@ const BrandGuide = () => {
                 <CardTitle>Logo Treatments</CardTitle>
               </CardHeader>
               <CardContent>
+                <div className="mb-6 p-4 bg-muted rounded-lg">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Latest Update:</strong> Created a clean, simple logo design and updated the brand guide to use it.
+                  </p>
+                </div>
                 <img 
                   src={logoTreatments} 
                   alt="Logo Treatments" 
