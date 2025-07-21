@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-import { Copy, Download, Palette, Type, Layout, Sparkles } from "lucide-react";
+import { Copy, Download, Palette, Type, Layout, Sparkles, Shield, Star } from "lucide-react";
 import cohortedLogo from "@/assets/cohorted-logo-final.png";
 import cohortedMoodboard from "@/assets/cohorted-moodboard-modern.png";
 import logoVariations from "@/assets/cohorted-logo-variations.png";
@@ -302,7 +302,10 @@ const BrandGuide = () => {
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3">Logo Usage Guidelines</h4>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <Shield className="h-4 w-4 text-primary" />
+                      Logo Usage Guidelines
+                    </h4>
                     <ul className="text-muted-foreground space-y-2">
                       <li>• Clean, minimal design optimized for scalability</li>
                       <li>• Works effectively at all sizes from favicon to billboard</li>
@@ -313,7 +316,10 @@ const BrandGuide = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3">Logo Features</h4>
+                    <h4 className="font-semibold mb-3 flex items-center gap-2">
+                      <Star className="h-4 w-4 text-primary" />
+                      Logo Features
+                    </h4>
                     <ul className="text-muted-foreground space-y-2">
                       <li>• <strong>Simplified:</strong> Removed visual clutter for better recognition</li>
                       <li>• <strong>Versatile:</strong> Works across digital and print media</li>
