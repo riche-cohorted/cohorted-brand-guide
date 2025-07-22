@@ -94,7 +94,7 @@ const BrandGuide = () => {
                 <CardContent className="space-y-6">
                   <div>
                     <h4 className="font-semibold mb-2">Company Name</h4>
-                    <p className="text-2xl font-bold text-primary">Cohorted</p>
+                    <p className="text-2xl font-bold text-primary">cohorted</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">Primary Tagline</h4>
