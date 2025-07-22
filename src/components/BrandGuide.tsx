@@ -28,13 +28,14 @@ const BrandGuide = () => {
   ];
 
   const typography = [
-    { name: "Display", font: "Inter", weight: "700", size: "48px", usage: "Page titles, hero headlines" },
-    { name: "Heading 1", font: "Inter", weight: "600", size: "36px", usage: "Section headers" },
-    { name: "Heading 2", font: "Inter", weight: "600", size: "24px", usage: "Sub-sections" },
-    { name: "Heading 3", font: "Inter", weight: "500", size: "20px", usage: "Card titles" },
-    { name: "Body Large", font: "Inter", weight: "400", size: "18px", usage: "Intro text, important body" },
-    { name: "Body", font: "Inter", weight: "400", size: "16px", usage: "Default body text" },
-    { name: "Small", font: "Inter", weight: "400", size: "14px", usage: "Captions, metadata" },
+    { name: "Display Hero", font: "Space Grotesk", weight: "800", size: "48px", usage: "Page titles, hero headlines" },
+    { name: "Heading 1", font: "Space Grotesk", weight: "700", size: "36px", usage: "Section headers" },
+    { name: "Heading 2", font: "Space Grotesk", weight: "700", size: "24px", usage: "Sub-sections" },
+    { name: "Heading 3", font: "Space Grotesk", weight: "500", size: "20px", usage: "Card titles" },
+    { name: "Body Large", font: "Space Grotesk", weight: "500", size: "18px", usage: "Intro text, important body" },
+    { name: "Body", font: "Space Grotesk", weight: "400", size: "16px", usage: "Default body text" },
+    { name: "Caption", font: "Space Grotesk", weight: "400", size: "14px", usage: "Captions, labels" },
+    { name: "Tech Accent", font: "Space Mono", weight: "400", size: "14px", usage: "Code, technical labels, wide tracking" },
   ];
 
   return (
@@ -425,16 +426,18 @@ const BrandGuide = () => {
                           </span>
                         </div>
                       </div>
-                      <div 
-                        className="text-foreground"
-                        style={{ 
-                          fontSize: type.size, 
-                          fontWeight: type.weight,
-                          fontFamily: type.font
-                        }}
-                      >
-                        The quick brown fox jumps over the lazy dog
-                      </div>
+                       <div 
+                         className={`p-4 border rounded-lg ${
+                           type.font === 'Space Mono' ? 'font-mono tracking-wider' : ''
+                         }`}
+                         style={{ 
+                           fontSize: type.size,
+                           fontWeight: type.weight,
+                           fontFamily: type.font === 'Space Mono' ? 'Space Mono, monospace' : 'Space Grotesk, sans-serif'
+                         }}
+                       >
+                         The quick brown fox jumps over the lazy dog
+                       </div>
                       <p className="text-sm text-muted-foreground">{type.usage}</p>
                       <Separator />
                     </div>
@@ -444,10 +447,12 @@ const BrandGuide = () => {
                 <div className="mt-8 p-6 bg-muted rounded-lg">
                   <h4 className="font-semibold mb-4">Typography Guidelines</h4>
                   <ul className="text-muted-foreground space-y-2">
-                    <li>• Use Inter font family for all text elements</li>
+                    <li>• Use Space Grotesk font family for all text elements</li>
+                    <li>• Headlines/Taglines: Use bold weights (700-800) for confident headlines</li>
+                    <li>• Body Text: Use regular/medium weights (400-500) for readable, modern content</li>
+                    <li>• Tech Accents: Use Space Mono with wide letter-spacing for tech-savvy flair</li>
                     <li>• Maintain consistent line height: 1.5 for body text, 1.2 for headings</li>
                     <li>• Ensure sufficient contrast ratios (minimum 4.5:1)</li>
-                    <li>• Use font weights purposefully: 400 for body, 500-600 for emphasis, 700 for headlines</li>
                   </ul>
                 </div>
               </CardContent>
