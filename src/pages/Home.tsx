@@ -34,7 +34,7 @@ const Home = () => {
                 <br />
                 <span className="text-muted-foreground">Beyond</span>
                 <br />
-                <span className="bg-gradient-electric bg-clip-text text-transparent">The Sale</span>
+                <span className="bg-gradient-coral bg-clip-text text-transparent">The Sale</span>
               </h1>
             </div>
             
@@ -44,7 +44,7 @@ const Home = () => {
             </p>
             
             <div className="flex items-center gap-6">
-              <Button size="lg" className="font-semibold px-8 py-6 text-lg">
+              <Button size="lg" className="font-semibold px-8 py-6 text-lg bg-coral hover:bg-coral/90 text-coral-foreground">
                 Start Transformation
                 <ArrowUpRight className="ml-2 h-5 w-5" />
               </Button>
@@ -57,18 +57,18 @@ const Home = () => {
         
         {/* Floating Cards */}
         <div className="absolute top-1/4 right-8 hidden lg:block">
-          <Card className="w-64 shadow-electric border-0 bg-card/90 backdrop-blur-sm">
+          <Card className="w-64 shadow-growth border-0 bg-card/90 backdrop-blur-sm">
             <CardContent className="p-6">
-              <div className="text-3xl font-black text-secondary mb-2">3.2x</div>
+              <div className="text-3xl font-black text-lime mb-2">3.2x</div>
               <div className="text-sm text-muted-foreground">Average Revenue Growth</div>
             </CardContent>
           </Card>
         </div>
         
         <div className="absolute bottom-1/3 right-1/4 hidden lg:block">
-          <Card className="w-48 shadow-brand border-0 bg-card/90 backdrop-blur-sm">
+          <Card className="w-48 shadow-coral border-0 bg-card/90 backdrop-blur-sm">
             <CardContent className="p-4">
-              <div className="text-2xl font-black text-accent mb-1">90 Days</div>
+              <div className="text-2xl font-black text-coral mb-1">90 Days</div>
               <div className="text-xs text-muted-foreground">To Measurable ROI</div>
             </CardContent>
           </Card>
@@ -90,8 +90,8 @@ const Home = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-destructive"></div>
+                  <div className="w-12 h-12 rounded-2xl bg-coral/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-coral"></div>
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">$3 Trillion Problem</h3>
@@ -100,8 +100,8 @@ const Home = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-destructive"></div>
+                  <div className="w-12 h-12 rounded-2xl bg-coral/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-coral"></div>
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">5x Cost Multiplier</h3>
@@ -110,8 +110,8 @@ const Home = () => {
                 </div>
                 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-destructive"></div>
+                  <div className="w-12 h-12 rounded-2xl bg-coral/10 flex items-center justify-center flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-coral"></div>
                   </div>
                   <div>
                     <h3 className="font-bold text-lg mb-2">90% Data Waste</h3>
@@ -122,7 +122,7 @@ const Home = () => {
             </div>
             
             <div className="relative">
-              <Card className="shadow-electric border-0 bg-gradient-electric text-white overflow-hidden">
+              <Card className="shadow-navy border-0 bg-gradient-depth text-white overflow-hidden">
                 <CardContent className="p-12">
                   <h3 className="text-4xl font-black mb-6">Our Solution</h3>
                   <p className="text-xl leading-relaxed mb-8 opacity-90">
@@ -162,49 +162,49 @@ const Home = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="shadow-brand border-0 bg-card group hover:shadow-electric transition-all duration-300">
+            <Card className="shadow-brand border-0 bg-card group hover:shadow-lime transition-all duration-300">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-3xl bg-secondary/10 flex items-center justify-center mb-6">
-                  <TrendingUp className="h-8 w-8 text-secondary" />
+                <div className="w-16 h-16 rounded-3xl bg-lime/10 flex items-center justify-center mb-6">
+                  <TrendingUp className="h-8 w-8 text-lime" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Revenue Intelligence</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   AI-powered analysis reveals hidden revenue opportunities in your customer data, 
                   identifying precise moments for intervention and growth.
                 </p>
-                <Button variant="ghost" className="p-0 h-auto font-semibold text-secondary">
+                <Button variant="ghost" className="p-0 h-auto font-semibold text-lime">
                   Learn More <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
             
-            <Card className="shadow-brand border-0 bg-card group hover:shadow-electric transition-all duration-300">
+            <Card className="shadow-brand border-0 bg-card group hover:shadow-coral transition-all duration-300">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-3xl bg-accent/10 flex items-center justify-center mb-6">
-                  <Users className="h-8 w-8 text-accent" />
+                <div className="w-16 h-16 rounded-3xl bg-coral/10 flex items-center justify-center mb-6">
+                  <Users className="h-8 w-8 text-coral" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Experience Architecture</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Strategic redesign of post-purchase journeys, optimizing every touchpoint 
                   for retention, expansion, and advocacy.
                 </p>
-                <Button variant="ghost" className="p-0 h-auto font-semibold text-accent">
+                <Button variant="ghost" className="p-0 h-auto font-semibold text-coral">
                   Learn More <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
             
-            <Card className="shadow-brand border-0 bg-card group hover:shadow-electric transition-all duration-300">
+            <Card className="shadow-brand border-0 bg-card group hover:shadow-gold transition-all duration-300">
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-3xl bg-primary/10 flex items-center justify-center mb-6">
-                  <Zap className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 rounded-3xl bg-gold/10 flex items-center justify-center mb-6">
+                  <Zap className="h-8 w-8 text-gold" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Growth Execution</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Hands-on implementation with enterprise-proven methodologies, delivering 
                   measurable results within 90 days.
                 </p>
-                <Button variant="ghost" className="p-0 h-auto font-semibold text-primary">
+                <Button variant="ghost" className="p-0 h-auto font-semibold text-gold">
                   Learn More <ArrowUpRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardContent>
@@ -217,21 +217,21 @@ const Home = () => {
       <section className="py-32 bg-muted/20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <Badge className="mb-6 text-sm px-4 py-2">Featured Program</Badge>
+            <Badge className="mb-6 text-sm px-4 py-2 bg-gold text-gold-foreground">Featured Program</Badge>
             <h2 className="text-5xl font-black mb-6">Customer Intelligence Accelerator</h2>
             <p className="text-xl text-muted-foreground">
               90-day intensive program that transforms your post-purchase experience into a revenue multiplier
             </p>
           </div>
           
-          <Card className="shadow-electric border-0 bg-card max-w-6xl mx-auto overflow-hidden">
+          <Card className="shadow-premium border-0 bg-gradient-premium text-gold-foreground max-w-6xl mx-auto overflow-hidden">
             <div className="grid lg:grid-cols-2">
               <CardContent className="p-12">
                 <h3 className="text-3xl font-bold mb-8">Program Components</h3>
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="w-8 h-8 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-secondary" />
+                    <div className="w-8 h-8 rounded-xl bg-lime/10 flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="h-5 w-5 text-lime" />
                     </div>
                     <div>
                       <h4 className="font-bold mb-1">AI Customer Intelligence Audit</h4>
@@ -240,8 +240,8 @@ const Home = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <div className="w-8 h-8 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-secondary" />
+                    <div className="w-8 h-8 rounded-xl bg-lime/10 flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="h-5 w-5 text-lime" />
                     </div>
                     <div>
                       <h4 className="font-bold mb-1">Revenue Optimization Strategy</h4>
@@ -250,8 +250,8 @@ const Home = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <div className="w-8 h-8 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-secondary" />
+                    <div className="w-8 h-8 rounded-xl bg-lime/10 flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="h-5 w-5 text-lime" />
                     </div>
                     <div>
                       <h4 className="font-bold mb-1">Experience Architecture Design</h4>
@@ -260,8 +260,8 @@ const Home = () => {
                   </div>
                   
                   <div className="flex gap-4">
-                    <div className="w-8 h-8 rounded-xl bg-secondary/10 flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-secondary" />
+                    <div className="w-8 h-8 rounded-xl bg-lime/10 flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="h-5 w-5 text-lime" />
                     </div>
                     <div>
                       <h4 className="font-bold mb-1">90-Day Implementation</h4>
@@ -271,9 +271,9 @@ const Home = () => {
                 </div>
               </CardContent>
               
-              <div className="bg-gradient-subtle p-12 flex flex-col justify-center">
+              <div className="bg-gradient-depth p-12 flex flex-col justify-center text-navy-foreground">
                 <div className="text-center mb-8">
-                  <div className="text-6xl font-black text-accent mb-4">3.2x</div>
+                  <div className="text-6xl font-black text-lime mb-4">3.2x</div>
                   <h4 className="text-xl font-bold mb-2">Average Revenue Growth</h4>
                   <p className="text-muted-foreground">Within 90 days of implementation</p>
                 </div>
@@ -285,11 +285,11 @@ const Home = () => {
                   </div>
                   <div className="flex justify-between items-center py-2">
                     <span className="text-muted-foreground">Typical 90-day ROI</span>
-                    <span className="font-bold text-xl text-accent">$150,000+</span>
+                    <span className="font-bold text-xl text-lime">$150,000+</span>
                   </div>
                 </div>
                 
-                <Button size="lg" className="w-full font-semibold text-lg py-6">
+                <Button size="lg" className="w-full font-semibold text-lg py-6 bg-coral hover:bg-coral/90 text-coral-foreground">
                   Start Your Transformation
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -323,7 +323,7 @@ const Home = () => {
                   <p className="text-sm text-muted-foreground mb-4">{company.industry}</p>
                   <div className="flex justify-center gap-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-accent fill-current" />
+                      <Star key={i} className="h-4 w-4 text-gold fill-current" />
                     ))}
                   </div>
                 </CardContent>
@@ -331,18 +331,18 @@ const Home = () => {
             ))}
           </div>
           
-          <Card className="shadow-electric border-0 bg-primary text-primary-foreground">
+          <Card className="shadow-electric border-0 bg-gradient-depth text-navy-foreground">
             <CardContent className="p-16 text-center">
               <h3 className="text-4xl font-black mb-6">Ready to Transform Your Growth?</h3>
               <p className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed opacity-90">
                 Join industry leaders who've discovered the power of AI-enabled post-purchase optimization.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold text-lg px-8 py-6">
+                <Button size="lg" className="bg-coral hover:bg-coral/90 text-coral-foreground font-semibold text-lg px-8 py-6">
                   Schedule Strategy Call
                   <ArrowUpRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold text-lg px-8 py-6">
+                <Button size="lg" variant="outline" className="border-white/30 text-white bg-white/5 hover:bg-white hover:text-navy font-semibold text-lg px-8 py-6">
                   Download Case Study
                 </Button>
               </div>
