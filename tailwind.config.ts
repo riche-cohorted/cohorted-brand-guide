@@ -80,8 +80,9 @@ export default {
 				'electric': 'var(--shadow-electric)'
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-				'display': ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+				'sans': ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
+				'display': ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
+				'mono': ['Space Mono', 'monospace']
 			},
 			keyframes: {
 				'accordion-down': {

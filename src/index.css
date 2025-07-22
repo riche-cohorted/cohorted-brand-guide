@@ -139,6 +139,26 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-weight: 400; /* Regular weight for body text */
+  }
+
+  /* Typography System */
+  h1, h2, h3, .headline {
+    font-weight: 700; /* Bold for headlines */
+  }
+
+  h4, h5, h6, .subheadline {
+    font-weight: 500; /* Medium for subheadings */
+  }
+
+  .accent-text, .tech-label {
+    @apply font-mono tracking-wider;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  .display-text {
+    font-weight: 800; /* Extra bold for hero text */
   }
 }
