@@ -205,6 +205,6 @@ All colors MUST be HSL.
   }
 
   .display-text {
-    font-weight: 800; /* Extra bold for hero text */
+    font-weight: 900; /* Black weight for hero text */
   }
 }

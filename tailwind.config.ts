@@ -107,8 +107,8 @@ export default {
 				'premium': 'var(--shadow-premium)'
 			},
 			fontFamily: {
-				'sans': ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
-				'display': ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
+				'sans': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
+				'display': ['Satoshi', 'system-ui', '-apple-system', 'sans-serif'],
 				'mono': ['Space Mono', 'monospace']
 			},
 			keyframes: {

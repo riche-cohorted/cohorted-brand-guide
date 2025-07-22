@@ -28,13 +28,13 @@ const BrandGuide = () => {
   ];
 
   const typography = [
-    { name: "Display Hero", font: "Space Grotesk", weight: "800", size: "48px", usage: "Page titles, hero headlines" },
-    { name: "Heading 1", font: "Space Grotesk", weight: "700", size: "36px", usage: "Section headers" },
-    { name: "Heading 2", font: "Space Grotesk", weight: "700", size: "24px", usage: "Sub-sections" },
-    { name: "Heading 3", font: "Space Grotesk", weight: "500", size: "20px", usage: "Card titles" },
-    { name: "Body Large", font: "Space Grotesk", weight: "500", size: "18px", usage: "Intro text, important body" },
-    { name: "Body", font: "Space Grotesk", weight: "400", size: "16px", usage: "Default body text" },
-    { name: "Caption", font: "Space Grotesk", weight: "400", size: "14px", usage: "Captions, labels" },
+    { name: "Display Hero", font: "Satoshi", weight: "900", size: "48px", usage: "Page titles, hero headlines" },
+    { name: "Heading 1", font: "Satoshi", weight: "700", size: "36px", usage: "Section headers" },
+    { name: "Heading 2", font: "Satoshi", weight: "700", size: "24px", usage: "Sub-sections" },
+    { name: "Heading 3", font: "Satoshi", weight: "500", size: "20px", usage: "Card titles" },
+    { name: "Body Large", font: "Satoshi", weight: "500", size: "18px", usage: "Intro text, important body" },
+    { name: "Body", font: "Satoshi", weight: "400", size: "16px", usage: "Default body text" },
+    { name: "Caption", font: "Satoshi", weight: "400", size: "14px", usage: "Captions, labels" },
     { name: "Tech Accent", font: "Space Mono", weight: "400", size: "14px", usage: "Code, technical labels, wide tracking" },
   ];
 
@@ -433,7 +433,7 @@ const BrandGuide = () => {
                          style={{ 
                            fontSize: type.size,
                            fontWeight: type.weight,
-                           fontFamily: type.font === 'Space Mono' ? 'Space Mono, monospace' : 'Space Grotesk, sans-serif'
+                           fontFamily: type.font === 'Space Mono' ? 'Space Mono, monospace' : 'Satoshi, sans-serif'
                          }}
                        >
                          The quick brown fox jumps over the lazy dog
@@ -447,8 +447,8 @@ const BrandGuide = () => {
                 <div className="mt-8 p-6 bg-muted rounded-lg">
                   <h4 className="font-semibold mb-4">Typography Guidelines</h4>
                   <ul className="text-muted-foreground space-y-2">
-                    <li>• Use Space Grotesk font family for all text elements</li>
-                    <li>• Headlines/Taglines: Use bold weights (700-800) for confident headlines</li>
+                    <li>• Use Satoshi font family for all primary text elements</li>
+                    <li>• Headlines/Taglines: Use bold weights (700) and black (900) for hero text</li>
                     <li>• Body Text: Use regular/medium weights (400-500) for readable, modern content</li>
                     <li>• Tech Accents: Use Space Mono with wide letter-spacing for tech-savvy flair</li>
                     <li>• Maintain consistent line height: 1.5 for body text, 1.2 for headings</li>
