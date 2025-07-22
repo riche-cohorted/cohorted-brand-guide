@@ -22,6 +22,11 @@ const BrandGuide = () => {
     { name: "Charcoal Black", hex: "#1A1D23", hsl: "220 15% 10%", usage: "Primary - Bold headers, text, authority" },
     { name: "Electric Teal", hex: "#00B3B3", hsl: "180 100% 45%", usage: "Secondary - Tech innovation, accents" },
     { name: "Electric Cyan", hex: "#00CCFF", hsl: "190 100% 50%", usage: "Accent - Energy, growth, highlights" },
+    { name: "Coral", hex: "#FF6B6B", hsl: "0 100% 71%", usage: "Warm Energy - CTA highlights, human connection" },
+    { name: "Lime", hex: "#A3E635", hsl: "84 81% 56%", usage: "Success/Growth - Revenue growth, positive metrics" },
+    { name: "Gold", hex: "#F5D06F", hsl: "40 88% 70%", usage: "Premium/Trust - Luxury accents, premium clients" },
+    { name: "Navy", hex: "#0A1E3F", hsl: "220 75% 14%", usage: "Depth/Dimension - Rich backgrounds, gradients" },
+    { name: "Slate", hex: "#6E7B8B", hsl: "215 12% 49%", usage: "Muted Tech - Charts, infographics, neutral tone" },
     { name: "Pure White", hex: "#FFFFFF", hsl: "0 0% 100%", usage: "Background, contrast, clean space" },
     { name: "Neutral Gray", hex: "#737373", hsl: "220 10% 45%", usage: "Supporting text, subtle elements" },
     { name: "Light Neutral", hex: "#F8F9FA", hsl: "220 10% 96%", usage: "Backgrounds, cards, sections" },
@@ -132,7 +137,7 @@ const BrandGuide = () => {
               </Card>
             </div>
 
-            <Card className="shadow-electric border-0 bg-gradient-electric text-white">
+            <Card className="shadow-premium border-0 bg-gradient-premium text-gold-foreground">
               <CardHeader className="pb-8">
                 <CardTitle className="text-4xl font-black text-center">Elevator Pitch</CardTitle>
               </CardHeader>
@@ -182,8 +187,8 @@ const BrandGuide = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="bg-white border-2 border-secondary/20 p-6 rounded-lg">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-3">
+                     <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-coral rounded-full flex items-center justify-center mr-3">
                         <span className="text-white font-bold text-lg">C</span>
                       </div>
                       <div>
@@ -199,8 +204,8 @@ const BrandGuide = () => {
                       The problem? Companies spend billions acquiring customers, then watch 70% of revenue potential disappear after the first purchase.
                       <br /><br />
                       Our solution? AI-powered customer intelligence that transforms data into measurable growth strategies. With enterprise expertise from Bank of America, Cigna Healthcare, and IBM, we deliver 3x average revenue growth in 90 days.
-                      <br /><br />
-                      <span className="text-secondary font-bold">#GrowthBeyondTheSale #CustomerIntelligence #AIConsulting</span>
+                       <br /><br />
+                       <span className="text-lime font-bold">#GrowthBeyondTheSale #CustomerIntelligence #AIConsulting</span>
                     </p>
                     <div className="flex gap-2">
                       <Badge variant="outline" className="text-xs">CustomerSuccess</Badge>
@@ -249,7 +254,7 @@ const BrandGuide = () => {
                   <div className="space-y-6">
                     {/* Message 1 */}
                     <div className="bg-muted p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-secondary">Message 1 - Connection Request</h5>
+                      <h5 className="font-semibold mb-2 text-coral">Message 1 - Connection Request</h5>
                       <p className="text-sm">
                         Hi [Name], I see you're driving growth at [Company]. I help companies like yours turn customer data into revenue engines. Would love to connect and share insights on post-purchase optimization.
                       </p>
@@ -257,7 +262,7 @@ const BrandGuide = () => {
 
                     {/* Message 2 */}
                     <div className="bg-muted p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-secondary">Message 2 - Value Add (3 days later)</h5>
+                      <h5 className="font-semibold mb-2 text-coral">Message 2 - Value Add (3 days later)</h5>
                       <p className="text-sm">
                         Thanks for connecting, [Name]! I saw [Company's recent news/content]. Quick question: are you capturing the full revenue potential from your existing customers? Most companies lose 70% of possible LTV after the first purchase. Happy to share some insights specific to your industry if helpful.
                       </p>
@@ -265,7 +270,7 @@ const BrandGuide = () => {
 
                     {/* Message 3 */}
                     <div className="bg-muted p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-secondary">Message 3 - Case Study (1 week later)</h5>
+                      <h5 className="font-semibold mb-2 text-lime">Message 3 - Case Study (1 week later)</h5>
                       <p className="text-sm">
                         [Name], thought you might find this interesting: we recently helped a [similar company] increase their customer LTV by 3x in 90 days using AI-powered post-purchase optimization. The approach focused on [specific relevant strategy]. Would a brief call to discuss what this could look like for [Company] be valuable?
                       </p>
@@ -273,7 +278,7 @@ const BrandGuide = () => {
 
                     {/* Message 4 */}
                     <div className="bg-muted p-4 rounded-lg">
-                      <h5 className="font-semibold mb-2 text-secondary">Message 4 - Direct Ask (1 week later)</h5>
+                      <h5 className="font-semibold mb-2 text-gold">Message 4 - Direct Ask (1 week later)</h5>
                       <p className="text-sm">
                         [Name], I'll be direct: if you're not systematically optimizing your post-purchase experience, you're likely leaving significant revenue on the table. We guarantee 3x growth in 90 days or we work for free. Worth 15 minutes to explore what that could mean for [Company]?
                       </p>
@@ -387,17 +392,43 @@ const BrandGuide = () => {
                     <div className="space-y-2">
                       <div className="h-16 rounded-lg bg-gradient-primary shadow-brand" />
                       <h5 className="font-medium">Primary Gradient</h5>
-                      <p className="text-sm text-muted-foreground">Hero sections, CTAs</p>
+                      <p className="text-sm text-muted-foreground">Navy to Slate transitions</p>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-16 rounded-lg bg-gradient-subtle shadow-brand" />
-                      <h5 className="font-medium">Subtle Gradient</h5>
-                      <p className="text-sm text-muted-foreground">Backgrounds, cards</p>
+                      <div className="h-16 rounded-lg bg-gradient-coral shadow-coral" />
+                      <h5 className="font-medium">Coral Energy</h5>
+                      <p className="text-sm text-muted-foreground">CTAs, engagement elements</p>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-16 rounded-lg bg-gradient-accent shadow-brand" />
-                      <h5 className="font-medium">Accent Gradient</h5>
-                      <p className="text-sm text-muted-foreground">Special highlights</p>
+                      <div className="h-16 rounded-lg bg-gradient-growth shadow-growth" />
+                      <h5 className="font-medium">Growth Signal</h5>
+                      <p className="text-sm text-muted-foreground">Success states, metrics</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-8">
+                    <h4 className="font-semibold mb-4">Color Usage Guidelines</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <h5 className="font-medium mb-2">Primary Applications</h5>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• Use Coral (#FF6B6B) for CTAs and human-centric elements</li>
+                          <li>• Apply Lime (#A3E635) to highlight growth metrics and success</li>
+                          <li>• Reserve Gold (#F5D06F) for premium features and trust signals</li>
+                          <li>• Use Navy (#0A1E3F) for rich backgrounds and depth</li>
+                          <li>• Employ Slate (#6E7B8B) for technical elements and charts</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-medium mb-2">Best Practices</h5>
+                        <ul className="text-sm text-muted-foreground space-y-1">
+                          <li>• Maintain proper contrast with background colors</li>
+                          <li>• Use gradients to create visual hierarchy</li>
+                          <li>• Apply accent colors purposefully - less is more</li>
+                          <li>• Consider accessibility in color combinations</li>
+                          <li>• Keep color usage consistent across platforms</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -475,9 +506,10 @@ const BrandGuide = () => {
                   <div className="flex flex-wrap gap-4">
                     <Button>Primary Button</Button>
                     <Button variant="secondary">Secondary Button</Button>
-                    <Button variant="outline">Outline Button</Button>
-                    <Button variant="ghost">Ghost Button</Button>
-                    <Button variant="destructive">Destructive Button</Button>
+                    <Button className="bg-coral hover:bg-coral/90 text-coral-foreground">Coral Button</Button>
+                    <Button className="bg-lime hover:bg-lime/90 text-lime-foreground">Growth Button</Button>
+                    <Button className="bg-gold hover:bg-gold/90 text-gold-foreground">Premium Button</Button>
+                    <Button className="bg-navy hover:bg-navy/90 text-navy-foreground">Navy Button</Button>
                   </div>
                 </div>
 
@@ -497,13 +529,33 @@ const BrandGuide = () => {
                         </p>
                       </CardContent>
                     </Card>
-                    <Card className="bg-gradient-primary text-primary-foreground">
+                    <Card className="bg-gradient-coral text-coral-foreground">
                       <CardHeader>
-                        <CardTitle>Gradient Card</CardTitle>
+                        <CardTitle>Coral Energy Card</CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-primary-foreground/90">
-                          Special card with brand gradient background for featured content.
+                        <p className="text-coral-foreground/90">
+                          Human-centric card with warm energy for CTA and engagement.
+                        </p>
+                      </CardContent>
+                    </Card>
+                    <Card className="bg-gradient-growth text-lime-foreground mt-4">
+                      <CardHeader>
+                        <CardTitle>Growth Card</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-lime-foreground/90">
+                          Vibrant signal for success metrics and positive growth indicators.
+                        </p>
+                      </CardContent>
+                    </Card>
+                    <Card className="bg-gradient-premium text-gold-foreground mt-4">
+                      <CardHeader>
+                        <CardTitle>Premium Card</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gold-foreground/90">
+                          Luxurious tone for premium client features and case studies.
                         </p>
                       </CardContent>
                     </Card>
@@ -518,8 +570,11 @@ const BrandGuide = () => {
                   <div className="flex flex-wrap gap-2">
                     <Badge>Default</Badge>
                     <Badge variant="secondary">Secondary</Badge>
-                    <Badge variant="outline">Outline</Badge>
-                    <Badge variant="destructive">Destructive</Badge>
+                    <Badge className="bg-coral text-coral-foreground">Coral</Badge>
+                    <Badge className="bg-lime text-lime-foreground">Growth</Badge>
+                    <Badge className="bg-gold text-gold-foreground">Premium</Badge>
+                    <Badge className="bg-navy text-navy-foreground">Navy</Badge>
+                    <Badge className="bg-slate text-slate-foreground">Slate</Badge>
                   </div>
                 </div>
               </CardContent>
@@ -534,17 +589,17 @@ const BrandGuide = () => {
                   <CardTitle>Website Applications</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="p-4 bg-gradient-primary rounded-lg text-primary-foreground">
+                  <div className="p-4 bg-gradient-depth rounded-lg text-navy-foreground">
                     <h3 className="text-xl font-semibold mb-2">Hero Section</h3>
-                    <p className="text-primary-foreground/90">Growth Beyond the Sale</p>
+                    <p className="text-navy-foreground/90">Growth Beyond the Sale</p>
                   </div>
                   <div className="p-4 border rounded-lg">
                     <h4 className="font-semibold text-primary mb-2">Section Header</h4>
-                    <p className="text-muted-foreground">Clean, minimal card design with proper spacing</p>
+                    <p className="text-slate">Clean, minimal card design with proper spacing</p>
                   </div>
                   <div className="flex gap-2">
-                    <Button size="sm">Get Started</Button>
-                    <Button variant="outline" size="sm">Learn More</Button>
+                    <Button className="bg-coral hover:bg-coral/90 text-coral-foreground">Get Started</Button>
+                    <Button className="bg-transparent border-gold text-gold hover:bg-gold/10">Learn More</Button>
                   </div>
                 </CardContent>
               </Card>
@@ -554,10 +609,10 @@ const BrandGuide = () => {
                   <CardTitle>Social Media Applications</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="p-4 bg-secondary text-secondary-foreground rounded-lg">
+                  <div className="p-4 bg-lime text-lime-foreground rounded-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                        <span className="text-xs text-primary-foreground font-bold">C</span>
+                      <div className="w-8 h-8 bg-navy rounded-full flex items-center justify-center">
+                        <span className="text-xs text-navy-foreground font-bold">C</span>
                       </div>
                       <span className="font-semibold">@Cohorted</span>
                     </div>
