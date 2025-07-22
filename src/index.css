@@ -187,6 +187,7 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground font-sans;
     font-weight: 400; /* Regular weight for body text */
+    letter-spacing: -0.01em;
   }
 
   /* Typography System */
